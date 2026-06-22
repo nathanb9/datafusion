@@ -49,6 +49,7 @@ pub mod eliminate_filter;
 pub mod eliminate_group_by_constant;
 pub mod eliminate_join;
 pub mod eliminate_limit;
+pub mod group_by_join_to_window;
 #[deprecated(since = "52.0.0", note = "Please use OptimizeUnions instead")]
 pub mod eliminate_nested_union {
     use crate::optimize_unions::OptimizeUnions;
